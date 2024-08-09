@@ -21,3 +21,19 @@ content-type: application/json
 {
     "flights": [["IND", "EWR"], ["SFO", "ATL"], ["GSO", "IND"], ["ATL", "GSO"]]
 }
+
+### Test Case 4 - Circular Path
+POST http://localhost:8080/calculate
+content-type: application/json
+
+{
+    "flights": [["BOS", "ORD"], ["ORD", "SFO"], ["SFO", "BOS"]]
+}
+
+### Test Case 5 - Disconnected paths
+POST http://localhost:8080/calculate
+content-type: application/json
+
+{
+    "flights": [["ORD", "LAX"], ["JFK", "MIA"]]
+}

@@ -52,4 +52,4 @@ dist/
 docs/
 
 # Ignore specific directories or files as needed
-/path/to/other/directory_or_file/
+/path/to/other/directory_or_file/node_modules/
