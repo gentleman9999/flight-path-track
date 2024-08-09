@@ -1,0 +1,23 @@
+### Test Case 1
+POST http://localhost:8080/calculate
+content-type: application/json
+
+{
+    "flights": [["SFO", "EWR"]]
+}
+
+### Test Case 2
+POST http://localhost:8080/calculate
+content-type: application/json
+
+{
+    "flights": [["ATL", "EWR"], ["SFO", "ATL"]]
+}
+
+### Test Case 3
+POST http://localhost:8080/calculate
+content-type: application/json
+
+{
+    "flights": [["IND", "EWR"], ["SFO", "ATL"], ["GSO", "IND"], ["ATL", "GSO"]]
+}
